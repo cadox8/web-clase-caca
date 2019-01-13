@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <title>Posts</title>
+  </head>
+  <body>
+
+    <!-- Nav -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio<i class="fas fa-home is-warning"></i></a></li>
+        <li class="is-active"><a href="posts.html">Posts<i class="fas fa-file-contract is-danger"></i></a></li>
+        <li><a href="about.html">Sobre Nosotros<i class="fas fa-users is-blue"></i></a></li>
+      </ul>
+      <div class="hide"><i class="fa fa-bars" aria-hidden="true"></i> Menu</div>
+    </nav>
+
+    <div class="container">
+      <h1 class="is-danger has-text-centered">Posts</h1><hr>
+      <div class="row">
+        <div class="column column-20">
+          <ul class="side">
+            <li class="side-menu" onclick="show('Staggeringbeauty')">Staggeringbeauty</li>
+            <li class="side-menu" onclick="show('despacito2')">Despacito 2</li>
+            <li class="side-menu" onclick="show('mercadona')">Mercadona</li>
+            <li class="side-menu" onclick="show('yep')">Yep</li>
+          </ul>
+        </div>
+        <div class="column">
+          <div class="has-text-centered" id="info">
+            <p>Da click en el menu para ir a los posts</p>
+          </div>
+          <div id="Staggeringbeauty" class="hidden has-text-centered">
+            <h2 class="is-blue h">Staggeringbeauty</h2><hr>
+            <p>Staggeringbeauty es una web creada por alguien que no aparece en ningún sitio con el único propósito de hacer reir.</p>
+            <a href="posts/sta.html" class="button">Ir <i class="fas fa-arrow-right is-green"></i></a>
+          </div>
+          <div id="despacito2" class="hidden has-text-centered">
+            <h2 class="is-blue h">Despacito 2</h2><hr>
+            <p>Despacito 2 es la mejor canción del mundo mundial creada por FlyingKitty.</p>
+            <a href="posts/des.html" class="button">Ir <i class="fas fa-arrow-right is-green"></i></a>
+          </div>
+          <div id="mercadona" class="hidden has-text-centered">
+            <h2 class="is-blue h">Mercadona</h2><hr>
+            <p><s>Metadona</s> Mercadona es una de las mayores cadenas de supermercado de la historia.</p>
+            <a href="posts/merc.html" class="button">Ir <i class="fas fa-arrow-right is-green"></i></a>
+          </div>
+          <div id="yep" class="hidden has-text-centered">
+            <h2 class="is-blue h">Yep</h2><hr>
+            <p>Yep, pues si, pues claro, pues vale</p>
+            <a href="posts/yep.html" class="button">Ir <i class="fas fa-arrow-right is-green"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Iván Rica © <span id="year">2018</span><br>
+        Hecho con <i class="fas fa-heart is-purple"></i>
+      </p>
+    </div>
+
+    <noscript>
+      <p style="color: red; text-align: center;">La web necesita que actives JavaScript para poder mostrarse correctamente.</p>
+    </noscript>
+  </body>
+</html>
